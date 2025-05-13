@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.banner {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.banner h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.banner .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff3366;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
