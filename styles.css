@@ -5,79 +5,123 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d0d0d;
+  color: #ffffff;
   line-height: 1.6;
 }
 
 header {
-  background-color: #111;
-  color: #fff;
-  padding: 20px;
+  background-color: #0d0d0d;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #e50914;
 }
 
 header h1 {
-  font-size: 24px;
+  color: #e50914;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
 }
 
 nav a {
-  color: #fff;
-  margin-left: 15px;
   text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e50914;
 }
 
 .banner {
-  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  background: linear-gradient(to right, #0d0d0d, #1a1a1a);
   text-align: center;
-  padding: 100px 20px;
-  color: white;
+  padding: 70px 20px;
 }
 
 .banner h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 15px;
 }
 
-.banner .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ff3366;
-  color: white;
-  text-decoration: none;
-  margin-top: 20px;
-  border-radius: 4px;
+.banner p {
+  font-size: 1.2rem;
+  color: #e50914;
 }
 
-section {
-  padding: 40px 20px;
-}
-
-.cards {
+.produtos {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
+  padding: 50px 20px;
+  background-color: #111;
 }
 
-.card {
-  background: #f9f9f9;
-  padding: 15px;
-  border-radius: 8px;
+.produto {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 20px;
+  width: 250px;
   text-align: center;
-  flex: 1 1 200px;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card img {
-  max-width: 100%;
-  border-radius: 4px;
+.produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.5);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.produto h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.produto p {
+  color: #ccc;
+  margin: 10px 0;
+}
+
+.produto button {
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.produto button:hover {
+  background-color: #b00610;
 }
 
 footer {
+  background-color: #0d0d0d;
   text-align: center;
-  background-color: #111;
-  color: #fff;
-  padding: 20px;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+  color: #999;
+  border-top: 1px solid #222;
 }
